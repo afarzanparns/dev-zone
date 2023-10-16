@@ -1,10 +1,10 @@
-* {
+/** {
     background-color: gray;
-}
+}*/
 
 body {
     width: 200px;
-    padding: red 4px solid;
+    padding: red 14px solid;
     border: green 6px solid;
     margin: blue 8px solid;
     background-color: cyan;
@@ -12,7 +12,7 @@ body {
 
 ul {
     background-color: yellow;
-    padding: 14px;
+    padding: 9px;
     list-style-type: none;
 }
 
