@@ -7,5 +7,27 @@ body {
     padding: red 4px solid;
     border: green 6px solid;
     margin: blue 8px solid;
-    background-color: yellow;
+    background-color: cyan;
 }
+
+ul {
+    background-color: yellow;
+    padding: 14px;
+    list-style-type: none;
+}
+
+ul li {
+    /*background: ;*/
+    padding: red 4px solid;
+    border: green 6px solid;
+    margin: blue 8px solid;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: red 4px solid;
+    border: green 6px solid;
+    margin: blue 8px solid;
+}
+
