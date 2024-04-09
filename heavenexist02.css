@@ -1,0 +1,105 @@
+
+body {
+  padding: red 10px solid;
+   border: grey 3px double;
+   margin: blue 30px solid;
+
+             width: 80%;
+       padding-top: 12em;
+       font-family: Helvetica, georgia, sans-serif;
+  background-color: #d8d8d8;    /* #F7D358; pleasing orange */
+             color: #000;
+}
+
+#topofhome {
+  position: absolute;
+      left: 0;
+       top: 0;
+}
+
+.shopfrontcircle {
+  position: absolute;
+       top: 7em;
+      left: 15em;
+   margin-bottom: 7em;
+  border: 10px blue solid;
+}
+
+ul {
+  list-style-type: none;
+}
+
+nav {
+   padding: 10px solid red;
+    border: 23px groove gray;
+    margin: 10px solid green;
+
+  position: absolute;
+       top: 1em;
+    margin-left: 3em;
+  margin-bottom: 5em;
+          width: 11em;
+}
+
+ul.navbar {
+  padding: 0;
+   margin: 0;
+}
+
+ul.navbar a {
+  text-decoration: none;
+}
+
+a:link {
+  color: blue;
+}
+
+a:visited {
+  color: purple;
+}
+
+ul.navbar li {
+    background: white;
+        margin: 0.5em 0;
+       padding: 0.3em;
+letter-spacing: 0.2em;
+  border-right: 1em solid black;
+}
+
+.name {
+        clear: both;
+   margin-top: 6em;
+      padding: 2em;
+       border: gray 3px dotted;
+}
+
+.introtoOmar {
+       border: gray 3px dotted;
+      padding: 2em;
+}
+
+.pagefoot {
+        clear: both;
+   margin-top: 1em;
+      padding: 2em;
+   border-top: thin dotted;
+}
+
+.reviewsbit {
+       border: gray 3px dotted;
+      padding: 2em;
+}
+
+.tumbnails {
+  position: static;
+       top: 1em;
+   padding: 2em;
+    border: gray 3px dotted;
+}
+
+.myloc {
+   margin: 12px;
+   border: 10px green dotted;
+  padding: 12px;
+}
+
