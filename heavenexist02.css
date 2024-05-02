@@ -1,0 +1,166 @@
+
+body {
+            height: 366%;
+            margin: 1%;
+            border: 3px double grey;
+       font-family: Helvetica, georgia, sans-serif;
+  background-color: #d8d8d8;  /* #F7D358; pleasing orange */
+             color: #000;
+}
+
+.shopfrontcircle {
+       position: absolute;
+            top: .7em;
+           left: .3em;
+  margin-bottom: 7em;
+         border: 10px blue solid;
+        z-index: -1;
+}
+
+ul {
+  list-style-type: none;
+}
+
+nav {
+       position: absolute;
+            top: 13.4em;
+           left: 1.3em;
+        padding: .6em;
+         border: 23px groove gray;
+         margin: ;
+
+          width: 11em;
+}
+
+ul.navbar {
+  padding: 0;
+   margin: 0;
+}
+
+ul.navbar a {
+  text-decoration: none;
+}
+
+a:link {
+  color: blue;
+}
+
+a:visited {
+  color: purple;
+}
+
+ul.navbar li {
+    background: white;
+        margin: 0.5em 0;
+       padding: 0.3em;
+letter-spacing: 0.2em;
+  border-right: 1em solid black;
+}
+
+.name {
+  position: absolute;
+       top: 16em;
+    margin: .3em;
+     width: auto;
+     max-width: 392px;
+   padding: 2em 2em 2em 1em;
+    border: 3px dotted grey;
+}
+
+.introtoOmar {
+  position: absolute;
+       top: 36em;
+     width: auto;
+     max-width: 392px;
+   padding: 2em;
+    border: 3px dotted grey;
+}
+
+.reviewsbit {
+  position: absolute;
+       top: 62em;
+     width: auto;
+     max-width: 392px;
+   padding: 2em;
+    border: 3px dotted grey;
+
+}
+
+.sniptilt {
+   padding: 1em;
+}
+
+.tn {
+  text-align: center;
+}
+
+.tumbnails {
+     clear: both;
+  position: absolute;
+       top: 38em;
+}
+
+.tumbnail {
+     clear: both;
+  position: static;
+       top: 0.5em;
+   padding: 0.5em;
+     width: 204px;
+   display: inline-block;
+    border: gray 3px dotted;
+}
+
+.pagefoot {
+     clear: both;
+  position: absolute;
+       top: 166em;
+     width: auto;
+   padding: 2em;
+border-top: thin dotted;
+}
+
+#topofhome {
+  position: absolute;
+      left: 0;
+       top: 0;
+  align-text: right;
+}
+
+#contpage {
+            height: 210%;
+            margin: 1%;
+            border: 3px double grey;
+       font-family: Helvetica, georgia, sans-serif;
+  background-color: #d8d8d8;  /* #F7D358; pleasing orange */
+             color: #000;
+}
+
+.fullsizer {
+  position: absolute;
+       top: 25em;
+      left: 1em;
+}
+
+
+.myloc {
+     clear: both;
+  position: absolute;
+       top: 46em;
+
+    border: 10px green dotted;
+   padding: 12px;
+}
+
+.invite {
+     clear: both;
+  position: absolute;
+       top: 57em;
+      left: 2em;
+}
+
+.publicenquirer {
+  position: absolute;
+       top: 62em;
+      left: 5em;
+}
+
