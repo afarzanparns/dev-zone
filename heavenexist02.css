@@ -1,0 +1,158 @@
+
+body {
+            margin: 1%;
+            border: 3px double grey;
+       font-family: Helvetica, georgia, sans-serif;
+  background-color: #d8d8d8;  /* #F7D358; pleasing orange */
+             color: #000;
+         font-size: 100%;
+}
+
+.shopcircleinwhite {
+    border: 10px blue solid;
+
+}
+.shopfrontcircle {
+       position: absolute;
+            top: 18.3em;
+           left: 1em;
+  margin-bottom: 1em;
+        z-index: -1;
+}
+
+ul {
+  list-style-type: none;
+}
+
+nav {
+        padding: .6em;
+         border: 23px groove gray;
+         margin: .4 0 0 1em;
+          width: 11em;
+}
+
+ul.navbar {
+  padding: 0;
+   margin: 0;
+}
+
+ul.navbar a {
+  text-decoration: none;
+}
+
+a:link {
+  color: blue;
+}
+
+a:visited {
+  color: purple;
+}
+
+ul.navbar li {
+    background: white;
+        margin: 0.5em 0;
+       padding: 0.3em;
+letter-spacing: 0.2em;
+  border-right: 1em solid black;
+}
+
+.name {
+
+    margin: 8em .3em .3em .3em;
+     width: auto;
+
+   padding: 2em 2em 2em 1em;
+    border: 3px dotted grey;
+}   /*  max-width: 392px;  top: 18em; */
+
+.introtoOmar {
+     width: auto;
+   padding: 2em;
+    border: 3px dotted grey;
+}
+
+.reviewsbit {
+       width: auto;
+     padding: 2em;
+      border: 3px dotted grey;
+  box-sizing: border-box;
+}
+.sniptilt {
+   padding: 0em;
+}
+
+
+
+/* FRESHSTORE.html page */
+.tn {
+  text-align: center;
+}
+.tumbnails {
+     clear: both;
+    margin: 0;
+     width: auto;
+}
+.tumbnail {
+
+       width: auto;
+     display: inline-block;
+      border: gray 3px dotted;
+  text-align: center;
+      margin: 2px;
+}  /*     padding: 0.4em; */
+
+
+.pagefoot {
+       clear: both;
+       width: auto;
+     padding: 2em;
+  border-top: thin dotted;
+  margin-top: 2em;
+}
+
+#topofhome {
+  position: absolute;
+      left: 0;
+       top: 0;
+}
+
+.fullsizer {
+   margin-top: 2em;
+  margin-left: 1em;
+        width: auto;
+}
+.fz p {
+  font-size: +4;
+}
+
+
+/*  CME.html page  */
+.myloc {
+        clear: both;
+  margin-left: .3em;
+       border: 10px green dotted;
+      padding: 2em;
+}
+.invite {
+          clear: both;
+    margin-left: 2em;
+}
+.publicenquirer {
+          clear: both;
+    margin-left: 5em;
+  margin-bottom: 2em;
+}
+
+
+<!--HOWIHELP.html page-->
+.whatioffer {
+     clear: both;
+     width: auto;
+
+    margin: .3em .3em .3em .3em;
+    border: 3px dotted grey;
+   padding: 2em;
+
+  position: relative;
+       top: 50em;
+}   /* box-sizing: border-box; */
