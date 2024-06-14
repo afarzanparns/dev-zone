@@ -177,3 +177,19 @@ letter-spacing: 0.2em;
   border-top: thin dotted;
   margin-top: 2em;
 }
+.socmedcontainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: left;
+}
+.socmedicon {
+  max-width: 8%;
+  flex-basis: 80%;
+}
+.socmedcaption {
+  font-size: large;
+  padding-left: 7px;
+}
+.socmedcaption.a:hover {
+  color:darkgoldenrod;
+}
