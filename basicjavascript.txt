@@ -1,0 +1,966 @@
+
+20240515Wed
+https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/learn-introductory-javascript-by-building-a-pyramid-generator/step-20
+
+1 Declare a variable
+JavaScript is the programming language that powers the web. Unlike the HTML and CSS that you just learnt, JavaScript is most commonly used to write logic, not markup.
+
+In this project, you will learn the basics of Javascript and apply those concepts to building a pyramid generator.
+
+A pyramid generator is a program where you can set the type of character, the count for the pyramid, and the direction of the pyramid. The program will then generate a pyramid based on those inputs.
+
+One of the most important concept in programming is the variable. A variable points to a specific memory address that stores a value. A variable is given a name, its name may be used throughout your code to access that value.
+
+Declaring a variable means giving it a name. In JavaScript, this is often done with the  let  keyword. For example, to declare a variable named hello-
+
+let hello;
+
+Variable naming follows specific rule: names can include letter, number, dollar and underscore but must not contain spaces and must not commence with a number.
+
+let character;
+
+
+2 initialise a variable
+
+let character = 'Hello';
+
+
+3 JavaScript has seven primitive data types, with String being one of them. In JavaScript, a string represents a sequence of character and can be in either single or double quotes
+
+Note that strings are immutable, which means that once created, a string cannot be changed
+
+String may be in single or double mark-
+let character = 'Hello';   CORRECT
+let character = "hello";   CORRECT
+
+
+4 console.log()
+The console allows you to print and view JavaScript output. You can send information to console with console.log()
+
+console.log(character);
+
+5 reassignment
+When a variable is declared with the  let  keyword, you may reassign (or change the value of) that variable later on.
+character = "World";
+
+Note that when reassigning a variable, do not use the  let  keyword again.
+let character = 'Hello';
+console.log(character);
+character = 'World';
+
+6 console.log(character); again
+7 camelCase: No spaces. The variable name commences in lower case and all subsequent words must have initial capital letters.
+let secondCharacter;
+secondCharacter = character;
+console.log(secondCharacter);
+
+8 uninitialized variable
+When you declare a variable without initialising it, it is considered uninitialised. So add a console.log() statement to learn the value of  secondCharacter
+console.log(secondCharacter); returns 'undefined'
+
+9 undefined
+The default value of an uninitialised variable is 'undefined'. This is a special data type that represent a value that does not have a definition yet. You may still assign a value to an uninitialised variable. for example-
+
+let uninitialised;
+uninitialised = 'assigned';
+
+Assign the string  'test'  to your secondCharacter variable below your declaration. Open the console to see how your log has changed
+1 let character = 'Hello';
+2 console.log(character);
+3 character = "World";
+4 let secondCharacter;
+5 secondCharacter = "Test"
+6 console.log(secondCharacter);
+
+
+
+10 You may assign one variable to another.
+Example Code
+let first = "One";
+let second = "Two";
+second = first;
+The second variable would now have the value "One".
+
+To see this in action, change your secondCharacter assignment from "Test" to your character variable.
+
+Then open the console to see what gets logged.
+
+change 5&6 to:
+5 secondCharacter = character;
+6 console.log(secondCharacter);
+
+
+
+11 declare next variable
+Delete all above lines save line 1
+
+
+12 Recap
+Before moving forward, you should take a moment to review the concepts you have learned.
+
+Use the let keyword to declare a profession variable and an age variable. Initialize profession with the string "teacher", but do not initialize age with any value.
+
+Log both of your variables to the console to see the results.
+1 let character = 'Hello';
+2 let  profession = 'teacher';
+3 let age;
+4 console.log(profession);
+5 console.log(age);
+
+
+
+Step 13
+Now that you have reviewed declaration and initialization, remove the code you wrote for your review. Do not remove your character variable.
+delete 2,3,4,5
+
+
+
+14 : integer var
+Use  let  keyword to declare a   count   variable. Assign count to be 8. With numbers, do not use quote mark.
+1 let character = 'hello';
+2 let count = 8;
+
+
+
+Step 15   Arithmetic operator +
+With the number data type, you can perform mathematical operations, like addition. Try printing count + 1 to the console.
+3 console.log(count + 1);
+
+
+
+16 Arithmetic operators -*/
+Step 16
+You can also perform subtraction (-), multiplication (*), and division (/). Feel free to experiment with the operators and numbers in your console.log. When you are ready to move on, remove the console.log.
+let character = 'Hello';
+let count = 8;
+console.log(count - 16);
+
+
+
+17 the array (similar to Python list)
+In programming, we work with lots of data. Many data structures help us to organise and manage data. One of the most basic data structures is an array.
+
+An array is a non-primitive data type that can hold a series of values. Primitive data type like string and number can hold only one value at a time. Non-primitive data types can hold more complex data.
+
+The array is denoted with the square bracket []. Here is a variable with the value of the empty array-     let array = [];
+
+Declare a  rows   variable and assign it the empty array
+let rows = [];  (declare the empty array)
+1 let character = 'Hello';
+2 let count = 8;
+3 let rows = [];
+
+
+
+18 array contain elements. Elements are delimited by comma-
+let array = ['first', 'second'];
+
+Change your rows declaration to be an array with the strings "Naomi", "Quincy", and "CamperChan". The order of values in an array is important, so follow that order. Remember that strings are case-sensitive.
+1 let character = 'Hello';
+2 let count = 8;
+3 let rows = ["Naomi", "Quincy", "CamperChan"];
+
+
+
+19 Access values within by refering to the index of the value. 0 is position one and would be accessible using square bracket i.e. with the statement- array[0];
+Print the first value in your rows array-
+console.log(rows[0]);
+
+
+
+20 Array is mutable
+Array is special, for it is considered mutable. This means that any value at a given index may be altered directly. For instance, the following assigns 25 to array's second element-
+let array = [1,2,3]; array[1]=25; console.log(array); // would print [1, 25, 3]
+
+Update the third element of your   rows   array to be the number 10, then print the   rows   array to your console
+string is immutable, but the JavaScript array is mutable-
+rows[2] = 10;
+console.log(rows)
+
+
+
+21   .length property
+Notice how the value in your  rows  array has been changed directly. This is called mutation. As you learn more about the array, you will learn when to mutate an array and when you should not.
+
+Before moving on, this is an opportunity to learn a common use of an array. 
+Currently, we access the last element in the array with rows[2], but you may not know how many elements are in an array when you want the last one.
+
+This is where .length property comes in. .length returns the # of elements in the array. To get the final element of any array, use the syntax-
+
+array[array.length - 1]
+
+array.length returns # of elements in the array. By subtracting 1, we have the index of its final element.
+
+Update your  rows[2]  to access dynamically the last element in the  rows  array.
+
+You should not see anything change on console.
+
+rows[rows.length - 1] = 10;
+
+
+
+22 delete two lines of your JavaScript
+This leaves four lines-
+1 let character = 'Hello';
+2 let count = 8;
+3 let rows = ['Naomi', 'Quincy', 'CamperChan'];
+5 console.log(rows);
+
+
+
+Step 23
+1 let character = 'Hello';
+2 let count = 8;
+3 let rows = ['Naomi', 'Quincy', 'CamperChan'];
+
+In the last few steps, you learned all about working with arrays. Take a moment to review what you have learned.
+
+Start by declaring a cities variable and initializing it as an array of the strings "London", "New York", and "Mumbai". Then log that variable to the console.
+
+After logging, change the last element of cities to the string "Mexico City", then log the cities variable again.
+
+When done correctly, you should see this output in the console.
+
+Example Code
+[ "London", "New York", "Mumbai" ]
+[ "London", "New York", "Mexico City" ]
+
+4 let cities = ['London', 'New York', 'Mumbai'];
+5 console.log(cities);
+6 cities[cities.length - 1] = 'Mexico City';
+7 console.log(cities);
+
+
+
+24 Now you are ready to move onto the next set of array lessons.
+Remove all of your code from the previous step
+
+
+
+25 In JavaScript, a method is a function associated with certain values or objects. e.g.
+.log() method
+is part of the   console   object
+
+Array has its own methods. .push() method will append the value inside the parentheses, onto the end of a JavaScript array. Here we append the number 12 to the end of an array-
+
+array.push(12);
+
+Use  .push()   to add 'freeCodeCamp' to the end of your  rows  array. Note change to the array with console.log
+
+let character = 'Hello';
+let count = 8;
+let rows = ["Naomi", "Quincy", "CamperChan"];
+rows.push("freeCodeCamp");
+console.log(rows);
+
+
+
+26 Another method essential for this project is the .pop() method. It removes the last element from an array and returns that element
+
+When a method returns a value, you may think of it as giving that value back to you, making it available for use in other parts of your code
+
+Create fresh var called   popped   and assign it the result of rows.pop(). Then log  popped  to the console
+
+let character = 'Hello';
+let count = 8;
+let rows = ["Naomi", "Quincy", "CamperChan"];
+rows.push("freeCodeCamp");
+let popped = rows.pop();
+console.log(popped);
+
+
+
+27  So, you should have seen   freeCodeCamp   printed to the console. This is because .pop() returns the value that was removed from the array - and you had pushed   freeCodeCamp   to the end of the array earlier
+
+However, what does .push() return? Assign your existing rows.push() to a new   pushed   variable, and log it.
+
+let character = 'Hello';
+let count = 8;
+let rows = ["Naomi", "Quincy", "CamperChan"];
+rows.push("freeCodeCamp");
+let pushed = rows.push();
+console.log(pushed);
+
+
+
+28 experiment with .push() & .pop() methods
+Were you expecting to see  4  in the console? name.push() RETURNS the new length of the array   name   after adding [that is, appending] the value that you give to it.
+
+Conversely, name.push(argument); appends argument onto the end of the array called name.
+
+It is important to be aware of what values a method returns. Take some time to experiment with .push() and .pop()
+
+
+let character = 'Hello';
+let count = 8;
+let rows = ["Naomi", "Quincy", "CamperChan"];
+let pushed = rows.push("freeCodeCamp");
+console.log(pushed);
+
+let popped = rows.pop();
+console.log(popped);
+console.log(rows);
+
+popped = rows.pop();
+console.log(popped);
+console.log(rows);
+
+popped = rows.pop();
+console.log(popped);
+console.log(rows);
+
+popped = rows.pop();
+console.log(popped);
+console.log(rows);
+
+rows.push('newmeat');
+console.log(rows);
+
+rows.push('pea');
+console.log(rows);
+console.log(rows.push());
+
+rows.push('carrot');
+console.log(rows);
+console.log(rows.push());
+
+then delete most lines.
+
+
+
+29  
+Change your rows declaration to be assigned an empty array again.
+
+Also, change your 'Hello' string to use double quotes again. Generally, it does not matter which of the two you prefer, but you will want to be consistent in that choice throughout your project.
+
+let character ="Hello";
+let count = 8;
+let rows = [];
+
+
+
+30  const statement
+Declaring a variable with the   let   keyword allows it to be reassigned. This means you could change    character    later to be a completely different value.
+
+For this project, you will not want to change these variable values. So instead, you should use   const   to declare them.  const   variables are special.
+
+First, a   const   variable cannot be reassigned like a   let   variable. This code would throw an error:
+
+  const firstName = "Naomi";
+  firstName = "Jessica";
+
+A   const   variable also cannot be uninitialised. This code would throw error-
+
+  const firstName;
+
+Replace your   let   keywords with   const
+
+1 const character = "Hello";
+2 const count = 8;
+3 const rows = [];
+
+
+
+31 Commence building the pyramid generator!   character   variable will serve as the building block for the pyramid
+
+"Hello" might not work very well for that. So change the value of character to be the hash character "#".
+
+
+1 const character = "#";
+2 const count = 8;
+3 const rows = [];
+
+
+
+32  Loops -   for   loop
+To generate a pyramid, you will need to create multiple rows. When you have to perform a task repeatedly until a condition is met, you will use a loop. There are many ways to write a loop.
+
+You are going to start with a basic   for   loop.   for   loops use the following syntax:
+
+Example Code
+for ("iterator"; "condition"; "iteration") { [logic] }
+
+In the upcoming steps, you'll explore each component of a loop in detail. For now, construct a   for   loop that includes the terms "iterator", "condition", and "iteration" for the three components. Keep the loop body, the section within the curly braces {}, empty.
+
+4 
+5 for ('iterator'; 'condition'; 'iteration') {}
+
+
+
+33  for i = 0;
+Your loop now needs a proper iterator. The iterator is a variable you can declare specifically in your for loop to control how the loop iterates or goes through your logic.
+
+It is a common convention to use i as your iterator variable in a loop. A for loop allows you to declare this in the parentheses (). For example, here is a for loop that declares an index variable and assigns it the value 100.
+
+Example Code
+for (let index = 100; "second"; "third") {
+
+}
+
+Replace the string "iterator" with a let declaration for the variable i. Assign it the value 0 to start. This will give the i variable the value 0 the first time your loop runs.
+
+let   declaration is legal inside the parentheses of a for loop
+4 
+5 for (let i = 0; 'condition'; 'iteration') {}
+
+
+
+34 the condition parameter is the second of three parameters
+It obviously returns a Boolean value (homage to one John Boole)
+
+The condition of a for loop tells the loop how many times it should iterate. When the condition becomes false, the loop will stop.
+
+In JavaScript, a Boolean value can be either true or false. These are not strings - you will learn more about the difference later on.
+
+For now, you will use the less than operator (<). This allows you to check if the value on the left is less than the value on the right. For example, count < 3 would evaluate to true if count is 2, and false if count is 4.
+
+Replace your "condition" string with a condition to check if i is less than count.
+
+4 
+5 for (let i = 0; i < count; 'iteration') {}
+
+
+
+35 the iteration parameter is the third parameter     i = i + 1
+
+Your iteration statement will tell your loop what to do with the iterator after each run.
+
+When you reassign a variable, you can use the variable to reference the previous value before the reassignment. This allows you to do things like add three to an existing number. For example, bees = bees + 3; would increase the value of bees by three.
+
+Use that syntax to replace your "iteration" string with a reassignment statement that increases i by one.
+
+4 
+5 for (let i = 0; i < count; i = i + 1) {}
+
+
+
+36
+Your loop should now run eight times, due to the   const count = 8;   statement. Inside the loop body, print the value of the iterator and view result
+
+1  const character = "#";
+2  const count = 8;
+3  const rows = [];
+4
+5  for (let i = 0; i < count; i = i + 1) {
+6  console.log(i);
+7  }
+
+
+
+37  visible loop output
+You should see the numbers zero through seven printed in your console, one per line. This will serve as the foundation for generating your pyramid.
+
+Replace your log statement with a statement to push i to your rows array.
+
+remove the log and append the  i  value to the end of the rows array
+change 6&7 to read as-
+{  rows.push(i);   }
+
+
+
+38 Unfortunately, now you can't see what your loop is doing.
+So use   let   to declare a   result   variable and assign it the empty string
+
+1  const character = "#";
+2  const count = 8;
+3  const rows = [];
+4
+5  for (let i = 0; i < count; i = i + 1) {
+6    rows.push(i);
+7  }
+8 
+9 let result = "";
+
+
+
+39 Add a log statement to print   result   . Depending on which console you use, you may not see anything printed
+
+1  const character = "#";
+2  const count = 8;
+3  const rows = [];
+4
+5  for (let i = 0; i < count; i = i + 1) {
+6    rows.push(i);
+7  }
+8 
+9 let result = "";
+10
+11 console.log(result);
+
+
+
+40 for...of   loop
+To manipulate the result string, you will use a different type of loop. Specifically, a for...of loop, which iterates over each item in an iterable object and temporarily assigns it to a variable.
+
+The syntax for a for...of loop looks like:
+
+Example Code
+for (const [value] of [iterable] ) {
+
+}
+Note that you can use const because the variable only exists for a single iteration, not during the entire loop.
+
+Create a for...of loop to iterate through your rows array, assigning each value to a row variable.
+
+1  const character = "#";
+2  const count = 8;
+3  const rows = [];
+4
+5  for (let i = 0; i < count; i = i + 1) {
+6    rows.push(i);
+7  }
+8 
+9  let result = "";
+10 
+11 
+12 for (const row of rows) {}
+
+
+
+41  Use   for...of   to concatenate strings together
+Remember in your previous loop that you used the addition operator + to increase the value of i by 1.
+
+You can do a similar thing with a string value, by appending a new string to an existing string. For example, hello = hello + " World"; would add the string " World" to the existing string stored in the hello variable. This is called concatenation.
+
+In your for...of loop, use the addition operator to concatenate the row value to the result value.
+1  const character = "#";
+2  const count = 8;
+3  const rows = [];
+4
+5  for (let i = 0; i < count; i = i + 1) {
+6    rows.push(i);
+7  }
+8 
+9  let result = "";
+10 
+11 for (const row of rows) {
+12   result = result + row;
+13 }
+14 
+15 console.log(result);
+
+
+
+42 \n  for fresh line op
+Now all of your numbers are appearing on the same line. This will not work for creating a pyramid.
+
+You will need to add a new line to each row. However, pressing the return key to insert a line break between quotes in JavaScript will result in a parsing error. Instead, you need to use the special escape sequence \n, which is interpreted as a new line when the string is logged. For example:
+
+Example Code
+lineOne = lineOne + "\n" + lineTwo;
+
+Use a second addition operator to concatenate a new line between the existing result value and the added row value.
+
+11 for (const row of rows) {
+12   result = result + "\n" + row;
+13 }
+14 
+15 console.log(result);
+
+
+
+43  push a different variable
+Printing numbers won't result in a visually appealing pyramid. Now that you're outputting the formatted content of your rows array, it's time to update your original loop.
+
+Instead of pushing i to the array, push the value of your character variable.
+
+
+5  for (let i = 0; i < count; i = i + 1) {
+6    rows.push(character);
+7  }
+8 
+9  let result = "";
+10 
+11 for (const row of rows) {
+12   result = result + "\n" + row;
+13 }
+14 
+15 console.log(result);
+
+
+
+44  .repeat() method
+Now you have a series of # characters, but the pyramid shape is still missing. Fortunately, the i variable represents the current "row" number in your loop, enabling you to use it for crafting a pyramid-like structure.
+
+To achieve this, you will use the .repeat() method available to strings. This method accepts a number as an argument, specifying the number of times to repeat the target string. For example, using .repeat() to generate the string "Code! Code! Code!":
+
+example code
+
+const activity = 'Code!';
+activity.repeat(3);
+
+Use the .repeat() method on your   character   , and give it   i   for the number
+
+5  for (let i = 0; i < count; i = i + 1) {
+6    rows.push(character);
+7  character.repeat(i);
+8  }
+
+
+
+45  famous 'off by one' error
+You're getting closer! At this point, you're encountering what's known as an off-by-one error, a frequent problem in zero-based indexing languages like JavaScript.
+
+The first index of your rows array is 0, which is why you start your for loop with i = 0. But repeating a string zero times results in nothing to print.
+
+To fix this, add 1 to the value of i in your .repeat() call. Do not assign it back to i like you did in your loop conditions.
+
+5  for (let i = 0; i < count; i = i + 1) {
+6    rows.push(character.repeat(i+1));
+7  }
+
+
+
+46  create a function
+The logic for formatting this pyramid is likely going to get complicated, which means it's a great time to extract that code into a function.
+
+A function is a block of code that can be reused throughout your application. Functions are declared with the following syntax:
+
+Example Code
+function [name]([parameter]) {
+
+}
+
+The function keyword tells JavaScript that the name variable is going to be a function. parameter is a variable that represents a value that is passed into the function when it is used. A function may have as many, or as few, parameters as you'd like. Like a for loop, the space between the curly braces is the function body.
+
+Declare a padRow function. Do not create any parameter variables yet. The function body should be empty. Remember that you need to use camel case for your naming convention.
+
+5 function padRow() {
+6
+7 }
+
+
+
+47  call the function that was just created
+In order to use a function, you need to call it. A function call tells your application to run the code from the function wherever you choose to call it. The syntax for a function call is the function name followed by parentheses. For example, this code defines and calls a test function.
+
+Example Code
+function test() {
+
+}
+test();
+
+
+5 function padRow() {
+6
+7 }
+8
+9 padRow();
+
+
+
+48  put result into a var
+You are calling your padRow function, but not doing anything with that function call. All functions in JavaScript return a value, meaning they provide the defined result of calling them for you to use elsewhere.
+
+To see the result of calling your padRow function, declare a call variable and assign your existing padRow call to that variable.
+
+1 const character = "#";
+2 const count = 8;
+3 const rows = [];
+4
+5 function padRow() {
+6
+7 }
+8 const call = padRow();
+9
+10  for (let i = 0; i < count; i = i + 1) {
+11    rows.push(character.repeat(i+1));
+12  }
+13
+14 let result = "";
+15 
+16 for (const row of rows) {
+17   result = result + "\n" + row;
+18 }
+19 
+20 console.log(result);
+
+
+
+49 Now use a log statement to print the value of your   call   variable
+9  console.log(call);
+
+
+
+50  return keyword in a function
+Your call variable has an undefined value, even though you defined it! This is because your padRow function does not currently return a value. By default, functions return undefined as their value.
+
+In order to return something else, you need to use the return keyword. Here is an example of a function that returns the string "Functions are cool!":
+
+Example Code
+function demo() {
+  return "Functions are cool!";
+}
+
+Use the   return   function to have your function return the string "Hello!"
+6  return "Hello!";
+
+
+
+51  Avoid 'hard code' - use parameter instead
+When you have a value that is explicitly written in your code, like the "Hello!" string in your function, it is considered to be hard-coded. Hard-coding a value inside a function might not make it as reusable as you'd like.
+
+Instead, you can define parameters for the function. Parameters are special variables that are given a value when you call the function, and can be used in your function to dynamically change the result of the function's code.
+
+To add a parameter to your function, you need to add a variable name inside the parentheses. For example, this demo function has a name parameter:
+
+Example Code
+function demo(name) {
+}
+
+name   sounds like a useful parameter, so go ahead and add it to your padRow function
+
+1 const character = "#";
+2 const count = 8;
+3 const rows = [];
+4
+5 function padRow(name) {
+6 return "Hello!";
+7 }
+8 const call = padRow();
+9 console.log(call);
+10  for (let i = 0; i < count; i = i + 1) {
+11    rows.push(character.repeat(i+1));
+12  }
+13
+14 let result = "";
+15 
+16 for (const row of rows) {
+17   result = result + "\n" + row;
+18 }
+19 
+20 console.log(result);
+
+
+
+52  
+A function does not have to return a hard-coded value. It can return the value stored in a variable. Parameters are special variables for a function, so they can also be returned.
+
+Change your   padRow   function to return   the   name   parameter directly.
+6  return name;
+
+
+
+53  argument and parameter
+If you open your console again, you'll see that your padRow function is returning undefined, even though you defined a return value! This is because parameters need to be given a value when you call the function.
+
+When you pass a value to a function call, that value is referred to as an argument. Here is an example of calling a demo function and passing "Naomi" as the argument for the name parameter.
+
+Example Code
+function demo(name) {
+  return name;
+}
+demo('Naomi');
+
+Pass your own name as the argument for the   name   parameter in your   padRow   call. Remember that your name is a string, so you'll need to use quotes.
+8  const call = padRow('neddy');
+
+
+
+54  review of the fn
+Before moving on, take a moment to review how functions work.
+
+Declare a function named addTwoNumbers   . This function should take two arguments and return the sum of those two arguments.
+
+Then declare a   sum   variable and assign it the value of calling your addTwoNumbers   function with 5 and 10 as the arguments. Log the   sum   variable to the console.
+
+function addTwoNumbers(a, b) {
+  return(a  + b);
+}
+const sum = addTwoNumbers(5, 10);
+console.log(sum);
+
+
+
+55  delete prev fn
+With that quick review complete, you should remove your addTwoNumbers function, sum variable, and log statement.
+
+
+
+56  global scope
+Variables in JavaScript are available in a specific scope. In other words, where a variable is declared determines where in your code it can be used.
+
+The first scope is the global scope. Variables that are declared outside of any "block" like a function or for loop are in the global scope. Your   character   ,   count   , and   rows   variables are all in the global scope.
+
+When a variable is in the global scope, a function can access it in its definition. Here is an example of a function using a global   title   variable:
+
+Example Code
+const title = "Professor ";
+function demo(name) {
+  return title + name;
+}
+demo("Naomi")
+
+This example would return "Professor Naomi". Update your padRow function to return the value of concatenating your   character   variable to the beginning of the   name   parameter.
+6  return character + name;
+
+
+
+57  local scope or block scope
+Variables can also be declared inside a function. These variables are considered to be in the local scope, or block scope. A variable declared inside a function can only be used inside that function. If you try to access it outside of the function, you get a reference error.
+
+To see this in action, use const to declare a test variable in your padRow function. Initialise it with the value "Testing".
+
+Then, below your function, try to log test to the console. You will see an error because it is not defined outside of the function's local scope. Remove that console.log to pass the tests and continue.
+
+function padRow(name) {
+  const test = "Testing";
+  return character + name;
+}
+console.log(test);
+
+ReferenceError: test is not defined
+
+
+
+58  How to access a local variable for global application
+Values returned out of a function are used by calling the function. You can use the function call directly as the value it returns, or capture the returned value in a variable. This way, you can use the value assigned to a locally scoped variable, outside the function it was created in.
+
+Example Code
+
+function getName()  {
+  const name = "Camper cat";
+  return name;
+}
+
+console.log(getName()); // 'Camper cat'
+
+const capturedReturnValue = getName();
+console.log(capturedReturnValue); // 'Camper cat'
+
+console.log(name); //a reference error
+
+
+
+To use your   "Testing"   value, return it out of the   padRow   function by updating your   return   statement to return only the   test   variable.
+
+1 const character = "#";
+2 const count = 8;
+3 const rows = [];
+4
+5 function padRow(name) {
+6   const test = "Testing";
+7   return test;
+8 }
+9
+10 const call = padRow("CamperChan");
+11 console.log(call);
+12 for (let i = 0; i < count; i = i + 1) {
+13   rows.push(character.repeat(i+1));
+14 }
+15
+16 let result = "";
+17 
+18 for (const row of rows) {
+19   result = result + "\n" + row;
+20 }
+21 
+22 console.log(result);
+
+
+
+60 (didn't skip 59, they have just altered their numbering by splitting step 1 into steps 1 and 2)
+
+The   return   keyword ends the execution of a function
+
+Below the return statement, log the string "This works!" to the console.
+
+After doing that, you will see that the string "This works!" does not display in the console, and the console.log("This works!") line is greyed out.
+
+Copy the console log and paste it above the return statement. Now, the string "This works!" should appear in the console.
+
+An important thing to know about the return keyword is that it does not just define a value to be returned from your function, it also stops the execution of your code inside a function or a block statement. This means any code after a return statement will not run.
+
+9 console.log("This works!");
+As per this brief, cut this line then paste it into line 7.
+
+ 
+
+61  Remove some code
+Now your call variable has the value "Testing". But your function is no longer using the name parameter.
+
+Remove the name parameter from your function declaration, then remove your "CamperChan" string from the padRow call.
+
+Also, remove both console.log from the padRow function.
+
+1 const character = "#";
+2 const count = 8;
+3 const rows = [];
+4
+5 function padRow() {
+6   const test = "Testing";
+7   return test;
+8 }
+9
+10 const call = padRow();
+11 console.log(call);
+12 for (let i = 0; i < count; i = i + 1) {
+13   rows.push(character.repeat(i+1));
+14 }
+15
+16 let result = "";
+17 
+18 for (const row of rows) {
+19   result = result + "\n" + row;
+20 }
+21 
+22 console.log(result);
+
+
+
+62  Delete two lines
+Because your function was no longer using the parameter, changing the value passed in the call did not affect it.
+
+Go ahead and remove the test declaration from your padRow function. Also, remove the return statement, so your function is empty again.
+(cleared 10 & 11)
+
+
+
+64  (Again, i didn't skip 63)
+In order to know how to format a row, your padRow function will need to know which row number you are on, and how many rows in total are being generated.
+
+The best way to do this is by creating function parameters for them. Give your padRow function a rowNumber and rowCount parameter. Multiple parameters are separated by a comma:
+
+example code
+
+function name([first], [second]) {}
+
+5 function padRow(rowNumber, rowCount);  {
+6
+7 }
+
+
+
+65  write some freehand logic!!
+Remember in an earlier step, you learned about return values. A function can return a value for your application to consume separately.
+
+In a function, the return keyword is used to specify a return value. For example, this function would return the value given to the first parameter:
+
+example code
+function name(parameter) {
+  return(parameter);
+}
+
+Use the return keyword to return the value of the character variable, repeated rowNumber times.
+
+5 function padRow(rowNumber, rowCount);  {
+6
+7 }
+
+for (const row of rows) {}
+
+let newstring = "\n";
+for (let i=0, i<rowNumber, i=i+1) {
+  newstring = newstring + character;
+}
+return(newstring);
+
+
+
+
+
+
+
+
+
+
