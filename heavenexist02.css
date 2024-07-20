@@ -198,7 +198,7 @@ letter-spacing: 0.2em;
 }   /* flex-basis: 80%; */
 .socmedcaption {
      font-size: large;
-  padding-left: 23px;
+   margin-left: 6em;
 }
 .socmedcaption.a:hover {
   color:darkgoldenrod;
