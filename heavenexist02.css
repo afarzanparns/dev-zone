@@ -13,8 +13,6 @@ body {
     border: 10px blue solid;
 }
 .shopfrontcircle {
-       position: absolute;
-            top: 16.8em;
            left: 1em;
   margin-bottom: 1em;
         z-index: -1;
@@ -34,6 +32,7 @@ nav {
    border: 23px groove gray;
    margin: .4em 0 0 1em;
     width: 11em;
+  z-index: 1;
 }
 
 ul.navbar {
