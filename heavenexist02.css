@@ -86,7 +86,6 @@ a:visited {
 }
 
 
-
 .btn-toggle {
   position: relative;
     bottom: 240px;
@@ -115,10 +114,6 @@ a:visited {
 }
 .sniptilt {
    padding: 0em;
-}
-
-h2 {
-      left: 2em;
 }
 
 
@@ -186,6 +181,7 @@ h2 {
   margin-bottom: 2em;
 }
 .contactbutton {
+          clear: both;
     margin-left: 5em;
 }
 
