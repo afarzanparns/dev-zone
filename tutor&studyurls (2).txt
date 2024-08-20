@@ -1,3 +1,22 @@
+20240819Mon
+Update membership of Amazon prime Sat 27 July '24
+https://update-ksud51.awstessell.com/6kHpTd?id=97302
+
+(link again) Failing to check this wifi setting is like leaving front door open to hacker
+https://www.huffingtonpost.co.uk/entry/not-checking-this-wifi-setting-is-like-leaving-your-front-door-open-to-hackers_uk_662f5c97e4b09dcb78304933?utm_source=pocket-newtab-en-gb
+
+DUCK How to send and receive user data securely html and JavaScript code
+How to create simple html javascript contact us form (Denys Kontorskyy 25012024)
+https://mailtrap.io/blog/javascript-contact-form/
+Simple approach to securing web form - Securing js web form with client-side encryption using the Virtru SDK
+https://medium.com/virtru/a-simple-approach-to-securing-web-forms-801cd5af405e
+
+Build button component
+https://web.dev/articles/building/a-button-component
+
+
+
+
 
 Name :                  Omar Ansari
 Company name: Heaven exists
