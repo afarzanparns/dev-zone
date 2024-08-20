@@ -33,7 +33,7 @@ body {
            padding: 3px ;
              color: var(--txt-color);
          font-size: 100%;
-}                      /* height: 75vh;  */
+}                  /* height: 75vh;  */
 p {
   color: var(--txt-color);
 }
@@ -86,10 +86,17 @@ a:visited {
 }
 
 
+/* https://ionic.io/ionicons/usage
+source tutorial-
+How to create rounded icon button html & css web design
+dateline Monday 19082024 at 2318   */
 .btn-toggle {
   position: relative;
     bottom: 240px;
-      left: 300px;
+      left: 280px;
+     width: 32px;
+    height: 32px;
+    cursor: pointer;
 }
 
 .nameclipart {
