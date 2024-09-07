@@ -189,6 +189,10 @@ h2 {
        border: 3px dotted grey;
       padding: 2em;
 }
+.contactbutton {
+          clear: both;
+    margin-left: 6em;
+}
 .invite {
           clear: both;
     margin-left: 5em;
@@ -198,9 +202,38 @@ h2 {
     margin-left: 5em;
   margin-bottom: 2em;
 }
-.contactbutton {
+
+#publicenquirer {
           clear: both;
-    margin-left: 5em;
+    margin-left: 0;
+  margin-bottom: 2em;
+}
+.namerowspc {
+  margin-left: .5em;
+}
+#contact-form-name {
+       margin: .5em 0 .3em 1em;
+}
+.emailrowspc {
+  margin-left: 2.8em;
+}
+#contact-form-email {
+       margin: .5em 0 .3em 1em;
+}
+.phonerowspc {
+  margin-left: 2.5em;
+}
+#contact-form-phone {
+       margin: .5em 0 .3em 1em;
+}
+.msgrowspc {
+  margin-left: 1.3em;
+}
+#contact-form-message {
+       margin: .5em 0 -3em 1em;
+}
+.buttonsrowspc {
+  margin-left: 6.5em;
 }
 
 
