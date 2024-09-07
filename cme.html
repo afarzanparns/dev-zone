@@ -62,31 +62,35 @@
   <input type = 'reset' value = 'Reset'>
 </form>
 
-
 <form id = 'publicenquirer' method = 'POST' action = 'sendmail.php'>
   <div class = 'form-row form-error' style = 'display:none;'></div>
   <div class = 'form-row'>
-    <label for = 'contact-form-name'>Name:</label>
+    <span class = 'namerowspc'></span>
+    <label for = 'contact-form-name'>Your name</label>
     <input id = 'contact-form-name' class = 'form-input' type = 'text' name = 'yourname' required >
   </div>
 
   <div class = 'form-row'>
-    <label for = 'contact-form-email'>Email:</label>
+    <span class = 'emailrowspc'></span>
+    <label for = 'contact-form-email'>Email</label>
     <input id = 'contact-form-email' class = 'form-input' cols = '28' type = 'email' name = 'youremail' required>
   </div>
 
   <div class = 'form-row'>
-    <label for = 'contact-form-phone'>Phone:</label>
+    <span class = 'phonerowspc'></span>
+    <label for = 'contact-form-phone'>Phone</label>
     <input id = 'contact-form-phone' class = 'form-input' type = 'tel' name = 'yourphone'>
   </div>
 
   <div class = 'form-row'>
-    <label for = 'contact-form-message'>Message:</label>
+    <span class = 'msgrowspc'></span>
+    <label for = 'contact-form-message'>Message</label>
     <textarea id = 'contact-form-message' rows = '5' cols = '28' class = 'form-input' name = 'yourmessage' required></textarea>
-  </div>
+  </div>   <br><br><br>
+  <span class = 'buttonsrowspc'></span>
   <button type = 'submit'>Sendup</button>
-  <button type = 'reset' value = 'Reset' >
-</form>
+  <button type = 'reset' value = 'Reset' >Reset</button>
+</form>  
 
 
 <address class='pagefoot'>
