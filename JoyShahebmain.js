@@ -1,46 +1,7 @@
 
-/*
-
-22.22 position: absolute;
-
-Fetzer 20241004Fri 1700-1900 Danny
-gofundme/4695216b fund local rescuers not govt
-thealexjonesstore.com drjonesnational.com
-Maria Z of OZ/NZ at 1600bst infowarsstore.com
-
-
-let shop = document.getElementById('shop');
-
-let generateShop = () => {
-  return(shop.innerHTML = `
-  <div class = 'item' >
-    <img width = '220' src = 'images/img-1.jpg' >
-    <div class = 'details' >
-      <h3>cash shirt</h3>
-      <p>lorem7 parag</p>
-      <div class = 'price-quantity' >
-        <h2>$ 45</h2>
-        <div class = 'buttons' >
-          <i class = 'bi bi-dash-lg' ></i>
-          <div class = 'quntity' >0</div>
-          <i class = 'bi bi-plus-lg' ></i>
-        </div>
-      </div>
-    </div>
-  </div>
-
-`)};
-
-generateShop();
- */
-
-
-
 let shop = document.getElementById('shop');
 
 console.log(shop);
-
-
 
 let basket = JSON.parse(localStorage.getItem('data')) || [];
 
@@ -129,25 +90,3 @@ let calculation = () => {
 };
 
 calculation();
-
-
-
-
-/*
-911c2c.org Richard Gage, possibly recorded on 20240912Thu
-The Family Industrial Complex 20240918Wed 2200BST = 1700EDT,
-richardgage911.org
-
-20240923Mon  Crypt Rick with his guest Marvin two yts=
-Easing people into waking up
-jointheinternet
-
-20240924Tue GForum health connection WG? H2 of show at 1806
-Scott - Original Hippocratic Oath dates back to 400BC
-Pray for Scott for he will benefit from our energy
-
-20240924Tue
-
-No fuss cremation has risen in popularity by >500% since 2019
-https://hybrid.goldenleaves.com/2024-report-july
-                    */
