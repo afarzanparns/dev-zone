@@ -314,7 +314,8 @@ h3 {
 }
 
 .dpapagenavbar ul {
-             height: 400px;
+                   height: 400px;
+     padding-inline-start: 20px;
 }
 
 .dpapagehtm h1 {
