@@ -70,7 +70,7 @@ body {
 
 body.dark-theme {
     --bgd-color: #faedcd;
-    --bgd-image: url(darkmodetile1.jpg);
+    --bgd-image: url(darkmodetile.jpg);
    --bod-border: yellow;
     --txt-color: #fff;
     --picborder: 3px dotted #bcf5a9;
