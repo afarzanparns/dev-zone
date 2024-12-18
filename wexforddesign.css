@@ -151,7 +151,7 @@ ul li a:hover {
 .btn-toggle {
             height: 67px;
              width: 80px;
-           padding: 0 0 24px 12px;
+           padding: 0 0 44px 52px;
 }  /*   justify-content: right; align-items: top;  dunno hoto override default setting on standard html type = 'button' icon  */
 
 i:hover {
