@@ -1,0 +1,452 @@
+
+* {
+      padding: 0;
+       margin: 0;
+   box-sizing: border-box;
+}
+
+
+
+/*  source
+https://www.tutorialstonight.com/js/javascript-console
+https://stackabuse.com/about/      */
+
+/*    https://developer.mozilla.org/en-US/docs/Web/CSS/text-align
+the css text-align property set the horizontal alignment of the inline-level content inside a block element or a table-cell box. This means that it work like vertical-align but in horizontal direction
+https://www.w3schools.com/csS/css_align.asp
+
+how many of all these alignment props do not require conjuncting with display flex pleases?
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align
+The  vertical-align css property set vertical alignment of an inline, inline-block or table-cell box
+
+learn about css display
+https://developer.mozilla.org/en-US/docs/Web/CSS/display
+
+flex-wrap: wrap;
+https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap
+https://www.w3schools.com/cssref/css3_pr_flex-wrap.php
+
+flex-basis:;
+https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis
+
+
+
+http://www.kiddofspeed.com/chernobyl-land-of-the-wolves/
+http://www.elenafilatova.com/index.html
+
+GRID
+https://developer.mozilla.org/en-US/docs/Web/CSS/grid
+
+vh vw vmin vmax (seek 100vh)
+https://www.sitepoint.com/css-viewport-units-quick-start/
+
+sought css prevent inheritance from parent
+https://developer.mozilla.org/en-US/docs/Web/CSS/unset
+https://developer.mozilla.org/en-US/docs/Web/CSS/Inheritance
+
+connect JavaScript to your html
+https://www.geeksforgeeks.org/how-to-link-javascript-file-to-a-separate-html-file/
+
+  */
+
+
+
+
+/* When writing your css, best bet is to create it a single line at a time and view the change of that css code on the product, by browser refreshes every time. If importing a new style, then again add that in one line at a time.  */
+/* Ensure that you test your product in a wide variety of web browser, for desktop, tablet, mobile. Would this be one reason why a virtual machine is so handy i wonder?  */
+
+
+
+body {
+    --bgd-color: #f7d358;
+    --bgd-image: url(../pics/cream_FilmGrain17_12_6.png);
+   --bod-border: silver;
+    --txt-color: #212529;
+    --picborder: 3px dotted green;
+}
+
+/*  please be sure your filepath is correct here - took days to realise it must go to the parent directory first, then pics/    and avoid using any quote mark around the argument   */
+
+body.dark-theme {
+    --bgd-color: #faedcd;
+    --bgd-image: url(../pics/darkmodetile1.jpg);
+   --bod-border: yellow;
+    --txt-color: #fff;
+    --picborder: 3px dotted #bcf5a9;
+
+}
+
+body {
+            margin: 7px;
+            border: 4px double var(--bod-border);
+           padding: 3px;
+       font-family: 'Gill Sans', sans-serif;
+  background-color: var(--bgd-color);
+  background-image: var(--bgd-image);
+             color: var(--txt-color);
+         font-size: 100%;
+}
+/*  #faedcd;  height: 100vh TURNS OUT IS UNDESIRABLE
+is background-repeat: repeat; property actually required please?? */
+
+/* 20241118Mon spoke with Aunt Anne, so happy birthday!  Note that the ul{} and the a{} selectors are needed in order to set these particular properties. These properties, i discover toady, are not interchangeable between these selectors  */
+
+nav {
+
+          min-width: 250px;
+
+            display: flex;
+     flex-direction: row;
+          flex-wrap: wrap;
+
+        align-items: center;
+    justify-content: space-between;
+             border: var(--picborder);
+
+             height: auto;
+     padding-bottom: 30px;
+      padding-right: 12px;
+
+}  /*   max-width: device-width;  height: 600px;  flex-basis: auto;  flex-shrink: 3;  border: 10px solid green;       */
+
+ul {
+               height: 400px;
+      list-style-type: none;
+ padding-inline-start: 20px;
+                  gap: 12px;
+}  /*  inspect element f12   TWOMOREHIDDENDEFAULTsARE
+   margin-block-start: 0;
+     margin-block-end: 0;    */
+
+a {
+   text-decoration: none;
+}
+
+
+.fivebuttonatmoment {
+            display: flex;
+     flex-direction: row;
+          flex-wrap: wrap;
+             margin: 0;
+        align-items: center;
+}     /*   border: 4px solid green; */
+
+ul li a {
+            padding: 21px;
+   background-color: #848484;
+              color: white;
+             border: 4px ivory solid;
+        font-weight: 700;
+}
+/* For this statement, the   li a   specification is ESSENTIAL.  The opening aspect can be   ul   (to style all   ul li a   selectors) or .fivebuttonatmoment in order to style this class only.   */
+
+ul li a:hover {
+   background-color: #f3e2a9;
+              color: #212529;
+         transition: 1s;
+}
+/* learnt that there must be no space betwixt the colon and the name of the pseudo class  */
+
+.btn-toggle {
+            height: 67px;
+             width: 80px;
+}  /*   justify-content: right; align-items: top;  dunno hoto override default setting on standard html type = 'button' icon  */
+
+i:hover {
+   cursor: pointer;
+}
+
+.baskt {
+           position: relative;
+   background-color: white;
+          font-size: 20pt;
+              color: #000;
+            padding: 14px;
+      border-radius: 6px;
+             margin: 134px 14px 0px 23px;
+}   /* margin-top ain't working here */
+
+.cartAmount {
+           position: absolute;
+                top: -14px;
+              right: -10px;
+   background-color: red;
+              color: #fff;
+          font-size: 13pt;
+            padding: 3px;
+      border-radius: 5px;
+            z-index: 1;
+}
+
+.pictor {
+             border: var(--picborder);
+            padding: 2em;
+}
+
+.shop {
+                 display: grid;
+   grid-template-columns: repeat(1, 280px);
+         justify-content: center;
+                     gap: 30px;
+} /* apply gap: 30px; if >1 grid column (conjunction with media query) */
+
+.item {
+                  border: 3px solid #212529;
+        background-color: #fff;
+
+}  /* border-radius: 30px 30px 0 0; 
+cos i dunno hoto round the top corners of ${img}
+
+.item ${img} {
+                 z-index: -101;
+           border-radius: 28px;
+}                    selector incorrect */
+
+.details {
+                 display: flex;
+          flex-direction: column;
+                 padding: 16px 13px;
+                   color: #212529;
+                     gap: 5px;
+}
+
+.price-quantity {
+                 display: flex;
+          flex-direction: row;
+             align-items: center;
+         justify-content: space-between;
+}
+
+.pricefig {
+             font-weight: 800;
+               font-size: 21pt;
+}
+
+.buttons {
+                 display: flex;
+          flex-direction: row;
+                     gap: 8px;
+               font-size: 13pt;
+}
+
+.bi-dash-lg {
+                   color: red;
+               font-size: 18pt;
+}
+
+.bi-plus-lg {
+                   color: green;
+               font-size: 18pt;
+}
+
+.bookmark {
+   background-color: #fff;
+            padding: 17px;
+}
+
+
+.introtoOmar {
+   background-color: #69c;
+            padding: 23px;
+}
+
+.introtoOmar p {
+              color: #fff;
+        font-weight: 600;
+          font-size: 19pt;
+}
+
+h2 {
+   background-color: #6699cc;
+              color: #fff;
+            padding: 2em 0 2em 0;
+          font-size: 22pt;
+     letter-spacing: 0.1em;
+             margin: 0;
+}
+
+h3 {
+              color: #fff;
+ margin-block-start: 0;
+       padding-left: 0;
+}
+
+.darkcolor {
+              color: #212529;
+}
+
+.reviewsbit {
+        margin-left: 1em;
+            padding: 0;
+}
+
+.contactmethods {
+        margin-left: 2em;
+}
+
+
+.cartpagehtm,
+.dpapagehtm {
+   background-color: #fff;
+   background-image: none;
+}
+.cartpagehtm .baskt,
+.dpapagehtm .baskt {
+             border: 2px solid #212529;
+}
+
+.dpapagenavbar {
+
+             height: auto;
+
+
+}
+.dpapagenavbar ul {
+
+                   height: 400px;
+
+     padding-inline-start: 20px;
+
+}
+
+.dpapagehtm h1 {
+             margin: 2em 0 3em 1em;
+}
+.dpapagehtm h2 {
+   background-color: #fff;
+}
+.dpapagehtm p {
+          font-size: 19pt;
+}
+.dpapagehtm ul {
+   height: auto;
+font-size: 15pt;
+   margin: 2em 0 2em 3em;
+}
+.govukdpa {
+list-style-type: '-   ';
+}
+
+
+
+.text-centre {
+         text-align: center;
+      margin-bottom: 0;
+}
+
+.checkout, .removeAll, .retstor {
+
+              color: #fff;
+            padding: 12px;
+             border: none;
+      border-radius: 4px;
+          font-size: 13pt;
+             cursor: pointer;
+             margin: 33px 0;
+}
+
+.retstor {
+   background-color: #212529;
+}
+
+.checkout {
+   background-color: green;
+}
+
+.removeAll {
+   background-color: red;
+}
+
+.bi-x {
+        font-weight: 100;
+          font-size: 23pt;
+              color: red;
+}  /* font-weight fail to work */
+
+
+
+/*  style for shop-cart*/
+.shop-cart {
+                 display: grid;
+   grid-template-columns: repeat(1, 300px);
+                     gap: 45px;
+                  margin: 2em .5em 2em 1em;
+}
+
+.cart-item {
+             display: flex;
+      flex-direction: column;
+              border: 3px solid #212529;
+}
+
+.pic-button-x {
+             display: flex;
+      flex-direction: row;
+     justify-content: space-between;
+
+}
+
+.pic-button-x .buttons {
+      margin: 1em 3em 0 .2em;
+      border: 4px cyan dotted;
+     padding: 0;
+
+}
+
+.linename-price {
+             display: flex;
+      flex-direction: row;
+}
+
+.linename-price p {
+            margin: 0;
+            border: 4px blue dotted;
+           padding: 5% 0 5% 1em;
+             width: 200px;
+        text-align: left;
+}
+
+.cart-item-pric {
+  background-color: #212529;
+             color: white;
+     border-radius: 5px;
+           padding: 5% 2%;
+
+}
+
+.myownformat p {
+      margin: 0;
+      border: 4px green dotted;
+     padding: .4em 0 .4em 1em;
+
+}
+
+
+
+address {
+           margin: 4.8em 1.5em 0 1em;
+       border-top: thin dotted;
+}
+
+.socmedcontainer {
+          display: flex;
+   flex-direction: row;
+      align-items: start;
+  justify-content: left;
+          padding: 2em 0;
+}  /* align-items property is used in conjunction with display: flex. accepted arguments for align-items include start, end, center, flex-start, flex-end, flex-center  */
+.socmedcaption {
+          padding: 1em 0 0 .5em;
+           height: 4em;
+}
+
+.footlink {
+          display: flex;
+   flex-direction: row;
+      align-items: start;
+              gap: 23px;
+}
+
+
+/*  please define class namely  .quantity   */
