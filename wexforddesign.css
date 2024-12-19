@@ -60,7 +60,7 @@ https://www.geeksforgeeks.org/how-to-link-javascript-file-to-a-separate-html-fil
 
 body {
     --bgd-color: #f7d358;
-    --bgd-image: url(../pics/cream_FilmGrain17_12_6.png);
+    --bgd-image: url(cream_FilmGrain17_12_6.png);
    --bod-border: silver;
     --txt-color: #212529;
     --picborder: 3px dotted green;
@@ -70,7 +70,7 @@ body {
 
 body.dark-theme {
     --bgd-color: #faedcd;
-    --bgd-image: url(../pics/darkmodetile1.jpg);
+    --bgd-image: url(darkmodetile.jpg);
    --bod-border: yellow;
     --txt-color: #fff;
     --picborder: 3px dotted #bcf5a9;
