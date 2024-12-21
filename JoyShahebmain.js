@@ -51,7 +51,7 @@ let generateShop = () => {
     return  `
 
 <div id = product-id-${id}  class = 'item' >
-    <img width = '215' src = ${img} alt = '${desc}' title = '${desc}' />
+    <img width = '215' src = ${img}  />
     <div class = 'details' >
       <h3 class = 'darkcolor' >${name}</h3>
       <p>${desc}</p>
@@ -71,6 +71,8 @@ let generateShop = () => {
 `;
 }).join(''));
 };
+
+// alt = '${desc}' title = '${desc}'
 
 generateShop();
 
