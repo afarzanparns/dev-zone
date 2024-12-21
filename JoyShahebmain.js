@@ -51,7 +51,7 @@ let generateShop = () => {
     return  `
 
 <div id = product-id-${id}  class = 'item' >
-    <img width = '100%' src = ${img} alt = ${desc} title = ${desc} >
+    <img width = '215' src = ${img} alt = ${desc} title = ${desc} />
     <div class = 'details' >
       <h3 class = 'darkcolor' >${name}</h3>
       <p>${desc}</p>
