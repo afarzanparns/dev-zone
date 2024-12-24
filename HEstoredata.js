@@ -151,7 +151,7 @@ let shopItemsData = [{
     id: 'tibetan',
   name: 'Sidr Leaves',
  price: 4,
-  desc: 'sidr',
+  desc: 'dry sidr leaves in tub',
    img: 'img-25.jpg',
 }, {
     id: 'quantum',
