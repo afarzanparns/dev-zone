@@ -149,8 +149,8 @@ let shopItemsData = [{
    img: 'img-24.jpg',
 }, {
     id: 'tibetan',
-  name: 'Sidr',
- price: 0,
+  name: 'Sidr Leaves',
+ price: 4,
   desc: 'sidr',
    img: 'img-25.jpg',
 }, {
@@ -168,25 +168,25 @@ let shopItemsData = [{
 }, {
     id: 'vinegar',
   name: 'Organic apple cider vinegar',
- price: 0,
+ price: 6,
   desc: 'organic product',
    img: 'img-28.jpg',
 }, {
     id: 'dextere',
   name: 'Saffron',
- price: 0,
+ price: 9,
   desc: 'posh spice',
    img: 'img-29.jpg',
 }, {
     id: 'incence',
-  name: 'incense pack',
- price: 0,
+  name: 'Incense pack - single pack',
+ price: 1.5,
   desc: 'incense pack',
    img: 'img-30.jpg',
 }, {
     id: 'reasons',
   name: 'Dry Turkey fig',
- price: 0,
+ price: 8,
   desc: 'dry Turkey fig',
    img: 'img-31.jpg',
 }, {
@@ -197,22 +197,22 @@ let shopItemsData = [{
    img: 'img-32.jpg',
 }, {
     id: 'bywater',
-  name: 'Natural spring water',
- price: 0,
+  name: 'Natural spring water 500ml',
+ price: 4,
   desc: 'natural spring water',
    img: 'img-33.jpg',
 }, {
     id: 'jamaica',
   name: 'Royal Yemeni Sidr Honey',
- price: 0,
+ price: 82,
   desc: 'royal Yemeni sidr honey',
    img: 'img-34.jpg',
 }, {
     id: 'rubicon',
-  name: 'Gemstones',
- price: 0,
-  desc: 'gemstones',
-   img: 'img-35.jpg',
+  name: '',
+ price: ,
+  desc: '',
+   img: '',
 }
 
 
