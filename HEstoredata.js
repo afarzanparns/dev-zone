@@ -209,10 +209,10 @@ let shopItemsData = [{
    img: 'img-34.jpg',
 }, {
     id: 'rubicon',
-  name: '',
- price: ,
-  desc: '',
-   img: '',
+  name: '0',
+ price: 0,
+  desc: '0',
+   img: '0',
 }
 
 
