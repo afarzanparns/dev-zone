@@ -210,7 +210,7 @@ let shopItemsData = [{
 }, {
     id: 'rubicon',
   name: '0',
- price: ,
+ price: 0,
   desc: '0',
    img: '0',
 }
