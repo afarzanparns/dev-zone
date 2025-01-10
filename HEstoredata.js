@@ -161,10 +161,10 @@ let shopItemsData = [{
    img: 'img-26.jpg',
 }, {
     id: 'zoology',
-  name: 'Care community mat',
- price: 0.05,
-  desc: 'circular mat',
-   img: 'img-27.jpg',
+  name: '0',
+ price: 0,
+  desc: '',
+   img: '0',
 }, {
     id: 'vinegar',
   name: 'Organic apple cider vinegar',
