@@ -204,19 +204,19 @@ let shopItemsData = [{
 }, {
     id: 'turkish',
   name: 'Pine honey turkey 800g',
- price: 0,
+ price: 20,
   desc: 'Pine honey turkey 800g',
    img: 'img-34.jpg',
 }, {
     id: 'trivium',
   name: 'Raw acacia honey',
- price: 0,
+ price: 20,
   desc: 'Raw acacia honey',
    img: 'img-35.jpg',
 }, {
     id: 'kildare',
   name: 'Eucalyptus honey 800g',
- price: 0,
+ price: 22,
   desc: 'Eucalyptus honey 800g',
    img: 'img-36.jpg',
 }, {
@@ -228,14 +228,14 @@ let shopItemsData = [{
 }, {
     id: 'rubicon',
   name: 'olive oil in plastic 500ml',
- price: 0,
-  desc: 'olive oil in plastic 500ml',
+ price: 13,
+  desc: 'olive oil in plastic',
    img: 'img-38.jpg',
 }, {
     id: 'Ustinov',
   name: 'olive oil in glass 500ml',
- price: 0,
-  desc: 'olive oil in glass 500ml',
+ price: 13,
+  desc: 'olive oil in glass',
    img: 'img-39.jpg',
 }
 ];
