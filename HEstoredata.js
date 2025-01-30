@@ -161,10 +161,10 @@ let shopItemsData = [{
    img: 'img-26.jpg',
 }, {
     id: 'zoology',
-  name: '0',
- price: 0,
-  desc: '',
-   img: '0',
+  name: 'rosemary honey',
+ price: 22,
+  desc: 'rosemary honey',
+   img: 'img-27.jpg',
 }, {
     id: 'vinegar',
   name: 'Organic apple cider vinegar',
