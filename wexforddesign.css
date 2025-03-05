@@ -314,7 +314,8 @@ h3 {
 
 
 .contactmethods {
-   margin-left: 2em;
+         width: 100%;
+   margin-left: 0;
 }
 .publicenquirer {
    max-width: 295px;
@@ -353,7 +354,7 @@ input[type = 'reset'] {
 table {
              width: 100%;
    border-collapse: separate;
-    border-spacing: 2em 1.4em;
+    border-spacing: 1em 1.4em;
 }
 
 .cartpagehtm,
